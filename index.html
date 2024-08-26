@@ -55,6 +55,40 @@
         border-radius: 8px;
         overflow: hidden;
       }
+
+      .slider-1 {
+        background-image: linear-gradient(
+            rgba(17, 17, 17, 0.9),
+            rgba(17, 17, 17, 0.7),
+            rgba(17, 17, 17, 0.5)
+          ),
+          url(./images/slider-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .slider-2 {
+        background-image: linear-gradient(
+            rgba(17, 17, 17, 0.9),
+            rgba(17, 17, 17, 0.7),
+            rgba(17, 17, 17, 0.5)
+          ),
+          url(./images/slider-2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .slider-3 {
+        background-image: linear-gradient(
+            rgba(17, 17, 17, 0.9),
+            rgba(17, 17, 17, 0.7),
+            rgba(17, 17, 17, 0.5)
+          ),
+          url(./images/slider-3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
 
@@ -262,9 +296,9 @@
       <!-- What Our Client Say section -->
       <section class="text-center mt-[120px]">
         <!-- title container -->
-        <div class="mb-16">
+        <div class="mb-16 px-2 lg:px-0">
           <h1 class="font-garamond text-[40px] font-extrabold text-gray-700">
-            What Our Clident Say
+            What Our Client Say
           </h1>
           <p
             class="text-base text-gray-500 font-normal leading-[26px] lg:max-w-2xl mx-auto mt-6"
@@ -275,45 +309,144 @@
           </p>
         </div>
 
-        <!-- Slider Section -->
-        <!-- <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+        <!-- Slider sub-section -->
+        <div>
+          <!-- Slider -->
+          <div class="carousel w-full h-[1000px] sm:h-[800px] lg:rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full">
+              <!-- slider content -->
+              <div class="w-full slider-1">
+                <!-- text content -->
+                <div class="py-36 mx-16 lg:mx-32">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./images/reviewer-1.png" />
+                    </div>
+                  </div>
+
+                  <h3
+                    class="text-2xl text-white font-extrabold font-garamond mt-6 mb-1"
+                  >
+                    Saul Goodman
+                  </h3>
+                  <small class="text-base font-normal text-white"
+                    >UI/UX Designer</small
+                  >
+                  <p
+                    class="text-base font-normal leading-[26px] text-gray-300 mt-8"
+                  >
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words,
+                    consectetur.
+                  </p>
+
+                  <img
+                    class="mx-auto mt-10 lg:mt-20"
+                    src="./images/bottom-bar.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <!-- slider content -->
+              <div class="w-full slider-2">
+                <!-- text content -->
+                <div class="py-36 mx-16 lg:mx-32">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./images/reviewer-1.png" />
+                    </div>
+                  </div>
+
+                  <h3
+                    class="text-2xl text-white font-extrabold font-garamond mt-6 mb-1"
+                  >
+                    Mike
+                  </h3>
+                  <small class="text-base font-normal text-white"
+                    >Businessman</small
+                  >
+                  <p
+                    class="text-base font-normal leading-[26px] text-gray-300 mt-8"
+                  >
+                    Lorem Ipsum is not simply random text. It has roots in a
+                    piece of classical Latin literature from 45 BC, making it
+                    over 2000 years old. Richard McClintock, a Latin professor
+                    at Hampden-Sydney College in Virginia, looked up one of the
+                    more obscure Latin words, consectetur.
+                  </p>
+
+                  <img
+                    class="mx-auto mt-10 lg:mt-20"
+                    src="./images/bottom-bar.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <!-- slider content -->
+              <div class="w-full slider-3">
+                <!-- text content -->
+                <div class="py-36 mx-16 lg:mx-32">
+                  <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./images/reviewer-1.png" />
+                    </div>
+                  </div>
+
+                  <h3
+                    class="text-2xl text-white font-extrabold font-garamond mt-6 mb-1"
+                  >
+                    Nacho Varga
+                  </h3>
+                  <small class="text-base font-normal text-white"
+                    >Drug Dealer</small
+                  >
+                  <p
+                    class="text-base font-normal leading-[26px] text-gray-300 mt-8"
+                  >
+                    Damn to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words,
+                    consectetur.
+                  </p>
+
+                  <img
+                    class="mx-auto mt-10 lg:mt-20"
+                    src="./images/bottom-bar.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div> -->
+        </div>
       </section>
     </main>
     <footer class="mt-[120px]"></footer>
