@@ -61,7 +61,7 @@
   <body class="font-poppins container mx-auto">
     <header>
       <!-- Navbar -->
-      <section class="py-10 hidden">
+      <section class="py-10">
         <div class="navbar">
           <div class="navbar-start">
             <div class="flex justify-center items-center gap-4">
@@ -70,7 +70,9 @@
             </div>
           </div>
 
-          <div class="navbar-center text-gray-500 text-base font-normal">
+          <div
+            class="navbar-center text-gray-500 text-base font-normal hidden lg:flex"
+          >
             <a class="mr-7">Home</a>
             <div class="breadcrumbs">
               <ul>
@@ -128,7 +130,7 @@
       <!-- Legal Practice Area section -->
       <section class="text-center mt-[120px]">
         <!-- title container -->
-        <div class="mb-16">
+        <div class="mb-16 px-2 lg:px-0">
           <h1 class="font-garamond text-[40px] font-extrabold text-gray-700">
             The Legal Practice Area
           </h1>
@@ -199,7 +201,7 @@
 
           <!-- card 4 -->
           <div
-            class="flex flex-col justify-center items-center px-[71px] pt-[56px] pb-[70px] hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-50 hover:border"
+            class="flex flex-col justify-center items-center px-[71px] pt-[56px] pb-[70px] hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-50 hover:border border-b lg:border-b-0 sm:border-l lg:border-l-0"
           >
             <img
               class="h-[72px] w-[72px]"
@@ -221,7 +223,7 @@
 
           <!-- card 5 -->
           <div
-            class="flex flex-col justify-center items-center px-[71px] pt-[56px] pb-[70px] hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-50 hover:border border-x"
+            class="flex flex-col justify-center items-center px-[71px] pt-[56px] pb-[70px] hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-50 hover:border border-x border-b md:border-b-0"
           >
             <img class="h-[72px] w-[72px]" src="./images/divorce.png" alt="" />
             <h3
@@ -258,7 +260,7 @@
       </section>
 
       <!-- What Our Client Say section -->
-      <section class="text-center mt-[120px] hidden">
+      <section class="text-center mt-[120px]">
         <!-- title container -->
         <div class="mb-16">
           <h1 class="font-garamond text-[40px] font-extrabold text-gray-700">
